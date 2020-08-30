@@ -15,6 +15,9 @@ if __name__ == '__main__':
     luciano = Pessoa(renzo, julio, nome='Luciano')
     print(renzo.cumprimentar())
     print(luciano.filhos)
-
+    renzo.sobrenome = 'Ramalho'
+    del renzo.sobrenome
     for filho in luciano.filhos:
         print(filho.nome)
+print(luciano.__dict__)
+print(renzo.__dict__)
